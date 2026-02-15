@@ -25,7 +25,7 @@ while True:
 
     joy1x = axis_to_arduino(joystick.get_axis(0))
     joy1y = axis_to_arduino(joystick.get_axis(1))
-    joy2x = axis_to_arduino(joystick.get_axis(2))
+    joy2x = axis_to_arduino(joystick.get_axis(4))
     joy2y = axis_to_arduino(joystick.get_axis(3))
 
     data = f"{joy1x},{joy1y},{joy2x},{joy2y}\n"
