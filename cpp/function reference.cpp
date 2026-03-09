@@ -11,7 +11,7 @@ int main() {
     std::cout << "Before function, a = " << a << std::endl;
 
     change(a);// x is another name for a. x referes to a. inside the function since x IS a, then a = 50.
-              // Any chnage to x chnages a;
+              // Any change to x changes a;
               
     std::cout << "After function, a = " << a << std::endl;
 
