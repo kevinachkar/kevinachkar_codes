@@ -1,0 +1,85 @@
+/*
+==========================
+      C++ VECTOR NOTES
+==========================
+
+1. EMPTY VECTOR
+----------------
+std::vector<int> vec;
+
+- size = 0
+- no elements exist
+- vec[0] is INVALID (crash / undefined behavior)
+
+Add elements using:
+vec.push_back(value);
+
+Example:
+vec.push_back(10);
+vec.push_back(20);
+// vec = [10, 20]
+
+
+2. ACCESSING ELEMENTS
+----------------------
+vec[0] -> first element
+vec[1] -> second element
+
+⚠ Only works if elements exist!
+
+
+3. VECTOR WITH SIZE
+-------------------
+std::vector<int> vec(3);
+
+- creates 3 elements
+- all initialized to 0 (for int)
+
+Example:
+vec = [0, 0, 0]
+
+You can still expand it:
+vec.push_back(5);
+// vec = [0, 0, 0, 5]
+
+
+4. VECTOR WITH VALUES
+---------------------
+std::vector<int> vec = {1, 2, 3};
+
+or
+
+std::vector<int> vec{1, 2, 3};
+
+Result:
+vec = [1, 2, 3]
+
+
+5. IMPORTANT IDEA
+-----------------
+- vector size = current number of elements
+- NOT a fixed limit
+- grows automatically with push_back()
+
+
+6. COMMON MISTAKE
+------------------
+std::vector<int> vec;
+vec[0] = 10;   // ❌ WRONG (no memory allocated yet)
+
+Correct:
+vec.push_back(10);  // ✅
+
+
+7. SUMMARY
+----------
+- empty vector → use push_back()
+- sized vector → pre-filled with 0s
+- initializer list → set values directly
+- vectors always grow dynamically
+
+To remove an element from a specific index :
+
+vec.erase(vec.begin() + 1); vec.begin() points to index 0, so vec.begin() + 1 is the second element(index 1)
+
+*/
