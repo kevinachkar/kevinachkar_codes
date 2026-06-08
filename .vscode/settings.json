@@ -6,5 +6,5 @@
             "packageManager": "ms-python.python:pip"
         }
     ],
-    "cmake.sourceDirectory": "C:/Users/kevin/OneDrive/Desktop/kevinachkar_codes/imgui_test"
+    "cmake.sourceDirectory": "C:/Users/kevin/OneDrive/Desktop/kevinachkar_codes/ImGui"
 }
